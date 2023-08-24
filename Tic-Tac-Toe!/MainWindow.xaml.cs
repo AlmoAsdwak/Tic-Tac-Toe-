@@ -713,16 +713,16 @@ namespace Tic_Tac_Toe
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             _win.Visibility = Visibility.Visible;
-            winsx++;
-            x.Text = "X= " + winsx;
+            winso++;
+            o.Text = "O= " + winso;
             Restart();
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             o_win.Visibility = Visibility.Visible;
-            winso++;
-            o.Text = "O= " + winso;
+            winsx++;
+            x.Text = "X= " + winsx;
             Restart();
         }
     }

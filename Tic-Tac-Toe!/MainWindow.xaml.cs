@@ -6,6 +6,9 @@ namespace Tic_Tac_Toe
 {
     public partial class MainWindow : Window
     {
+
+
+        int wincheck = 0;
         int winsx = 0;
         int winso = 0;
         int a = 0;
@@ -18,6 +21,8 @@ namespace Tic_Tac_Toe
         int i = 0;
         int j = 0;
         int k = 0;
+
+
         public MainWindow()
         {
             InitializeComponent();
@@ -45,51 +50,81 @@ namespace Tic_Tac_Toe
             }
             if (c == 1 && d == 1 && l == 1)
             {
-                o_win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winsx++;
-                x.Text = "X= " + winsx;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    o_win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winsx++;
+                    x.Text = "X= " + winsx;
+                    Restart();
+                }
             }
             if (c == -1 && d == -1 && l == -1)
             {
-                _win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winso++;
-                o.Text = "O= " + winso;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    _win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winso++;
+                    o.Text = "O= " + winso;
+                    Restart();
+                }
             }
             if (c == 1 && f == 1 && i == 1)
             {
-                o_win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winsx++;
-                x.Text = "X= " + winsx;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    o_win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winsx++;
+                    x.Text = "X= " + winsx;
+                    Restart();
+                }
             }
             if (c == -1 && f == -1 && i == -1)
             {
-                _win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winso++;
-                o.Text = "O= " + winso;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    _win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winso++;
+                    o.Text = "O= " + winso;
+                    Restart();
+                }
             }
             if (c == 1 && g == 1 && k == 1)
             {
-                o_win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winsx++;
-                x.Text = "X= " + winsx;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    o_win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winsx++;
+                    x.Text = "X= " + winsx;
+                    Restart();
+                }
             }
             if (c == -1 && g == -1 && k == -1)
             {
-                _win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winso++;
-                o.Text = "O= " + winso;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    _win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winso++;
+                    o.Text = "O= " + winso;
+                    Restart();
+                }
             }
 
         }
@@ -116,35 +151,55 @@ namespace Tic_Tac_Toe
             }
             if (c == 1 && d == 1 && l == 1)
             {
-                o_win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winsx++;
-                x.Text = "X= " + winsx;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    o_win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winsx++;
+                    x.Text = "X= " + winsx;
+                    Restart();
+                }
             }
             if (c == -1 && d == -1 && l == -1)
             {
-                _win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winso++;
-                o.Text = "O= " + winso;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    _win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winso++;
+                    o.Text = "O= " + winso;
+                    Restart();
+                }
             }
             if (d == 1 && g == 1 && j == 1)
             {
-                o_win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winsx++;
-                x.Text = "X= " + winsx;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    o_win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winsx++;
+                    x.Text = "X= " + winsx;
+                    Restart();
+                }
             }
             if (d == -1 && g == -1 && j == -1)
             {
-                _win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winso++;
-                o.Text = "O= " + winso;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    _win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winso++;
+                    o.Text = "O= " + winso;
+                    Restart();
+                }
             }
         }
 
@@ -170,51 +225,81 @@ namespace Tic_Tac_Toe
             }
             if (c == 1 && d == 1 && l == 1)
             {
-                o_win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winsx++;
-                x.Text = "X= " + winsx;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    o_win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winsx++;
+                    x.Text = "X= " + winsx;
+                    Restart();
+                }
             }
             if (c == -1 && d == -1 && l == -1)
             {
-                _win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winso++;
-                o.Text = "O= " + winso;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    _win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winso++;
+                    o.Text = "O= " + winso;
+                    Restart();
+                }
             }
             if (l == 1 && g == 1 && i == 1)
             {
-                o_win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winsx++;
-                x.Text = "X= " + winsx;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    o_win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winsx++;
+                    x.Text = "X= " + winsx;
+                    Restart();
+                }
             }
             if (l == -1 && g == -1 && i == -1)
             {
-                _win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winso++;
-                o.Text = "O= " + winso;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    _win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winso++;
+                    o.Text = "O= " + winso;
+                    Restart();
+                }
             }
             if (l == 1 && h == 1 && k == 1)
             {
-                o_win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winsx++;
-                x.Text = "X= " + winsx;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    o_win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winsx++;
+                    x.Text = "X= " + winsx;
+                    Restart();
+                }
             }
             if (l == -1 && h == -1 && k == -1)
             {
-                _win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winso++;
-                o.Text = "O= " + winso;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    _win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winso++;
+                    o.Text = "O= " + winso;
+                    Restart();
+                }
             }
         }
 
@@ -240,35 +325,56 @@ namespace Tic_Tac_Toe
             }
             if (c == 1 && f == 1 && i == 1)
             {
-                o_win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winsx++;
-                x.Text = "X= " + winsx;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    o_win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winsx++;
+                    x.Text = "X= " + winsx;
+                    Restart();
+                }
             }
             if (c == -1 && f == -1 && i == -1)
             {
-                _win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winso++;
-                o.Text = "O= " + winso;
-                Restart();
+
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    _win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winso++;
+                    o.Text = "O= " + winso;
+                    Restart();
+                }
             }
             if (f == 1 && g == 1 && h == 1)
             {
-                o_win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winsx++;
-                x.Text = "X= " + winsx;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    o_win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winsx++;
+                    x.Text = "X= " + winsx;
+                    Restart();
+                }
             }
             if (f == -1 && g == -1 && h == -1)
             {
-                _win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winso++;
-                o.Text = "O= " + winso;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    _win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winso++;
+                    o.Text = "O= " + winso;
+                    Restart();
+                }
             }
         }
 
@@ -294,67 +400,107 @@ namespace Tic_Tac_Toe
             }
             if (c == 1 && g == 1 && k == 1)
             {
-                o_win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winsx++;
-                x.Text = "X= " + winsx;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    o_win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winsx++;
+                    x.Text = "X= " + winsx;
+                    Restart();
+                }
             }
             if (c == -1 && g == -1 && k == -1)
             {
-                _win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winso++;
-                o.Text = "O= " + winso;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    _win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winso++;
+                    o.Text = "O= " + winso;
+                    Restart();
+                }
             }
             if (d == 1 && g == 1 && j == 1)
             {
-                o_win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winsx++;
-                x.Text = "X= " + winsx;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    o_win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winsx++;
+                    x.Text = "X= " + winsx;
+                    Restart();
+                }
             }
             if (d == -1 && g == -1 && j == -1)
             {
-                _win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winso++;
-                o.Text = "O= " + winso;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    _win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winso++;
+                    o.Text = "O= " + winso;
+                    Restart();
+                }
             }
             if (l == 1 && g == 1 && i == 1)
             {
-                o_win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winsx++;
-                x.Text = "X= " + winsx;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    o_win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winsx++;
+                    x.Text = "X= " + winsx;
+                    Restart();
+                }
             }
             if (l == -1 && g == -1 && i == -1)
             {
-                _win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winso++;
-                o.Text = "O= " + winso;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    _win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winso++;
+                    o.Text = "O= " + winso;
+                    Restart();
+                }
             }
             if (f == 1 && g == 1 && h == 1)
             {
-                o_win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winsx++;
-                x.Text = "X= " + winsx;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    o_win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winsx++;
+                    x.Text = "X= " + winsx;
+                    Restart();
+                }
             }
             if (f == -1 && g == -1 && h == -1)
             {
-                _win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winso++;
-                o.Text = "O= " + winso;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    _win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winso++;
+                    o.Text = "O= " + winso;
+                    Restart();
+                }
             }
 
         }
@@ -381,35 +527,55 @@ namespace Tic_Tac_Toe
             }
             if (f == 1 && g == 1 && h == 1)
             {
-                o_win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winsx++;
-                x.Text = "X= " + winsx;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    o_win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winsx++;
+                    x.Text = "X= " + winsx;
+                    Restart();
+                }
             }
             if (f == -1 && g == -1 && h == -1)
             {
-                _win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winso++;
-                o.Text = "O= " + winso;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    _win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winso++;
+                    o.Text = "O= " + winso;
+                    Restart();
+                }
             }
             if (l == 1 && h == 1 && k == 1)
             {
-                o_win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winsx++;
-                x.Text = "X= " + winsx;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    o_win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winsx++;
+                    x.Text = "X= " + winsx;
+                    Restart();
+                }
             }
             if (l == -1 && h == -1 && k == -1)
             {
-                _win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winso++;
-                o.Text = "O= " + winso;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    _win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winso++;
+                    o.Text = "O= " + winso;
+                    Restart();
+                }
             }
         }
 
@@ -435,51 +601,81 @@ namespace Tic_Tac_Toe
             }
             if (c == 1 && f == 1 && i == 1)
             {
-                o_win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winsx++;
-                x.Text = "X= " + winsx;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    o_win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winsx++;
+                    x.Text = "X= " + winsx;
+                    Restart();
+                }
             }
             if (c == -1 && f == -1 && i == -1)
             {
-                _win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winso++;
-                o.Text = "O= " + winso;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    _win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winso++;
+                    o.Text = "O= " + winso;
+                    Restart();
+                }
             }
             if (l == 1 && g == 1 && i == 1)
             {
-                o_win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winsx++;
-                x.Text = "X= " + winsx;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    o_win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winsx++;
+                    x.Text = "X= " + winsx;
+                    Restart();
+                }
             }
             if (l == -1 && g == -1 && i == -1)
             {
-                _win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winso++;
-                o.Text = "O= " + winso;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    _win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winso++;
+                    o.Text = "O= " + winso;
+                    Restart();
+                }
             }
             if (j == 1 && k == 1 && i == 1)
             {
-                o_win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winsx++;
-                x.Text = "X= " + winsx;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    o_win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winsx++;
+                    x.Text = "X= " + winsx;
+                    Restart();
+                }
             }
             if (j == -1 && k == -1 && i == -1)
             {
-                _win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winso++;
-                o.Text = "O= " + winso;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    _win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winso++;
+                    o.Text = "O= " + winso;
+                    Restart();
+                }
             }
         }
 
@@ -490,50 +686,73 @@ namespace Tic_Tac_Toe
             b.Visibility = Visibility.Hidden;
             if (a % 2 != 0)
             {
+
                 o_8.Visibility = Visibility.Hidden;
                 j++;
             }
             else
             {
+
                 _8.Visibility = Visibility.Hidden;
                 j--;
             }
             if (c != 0 && d != 0 && l != 0 && f != 0 && g != 0 && h != 0 && i != 0 && j != 0 && k != 0)
             {
+
                 draw.Visibility = Visibility.Visible;
                 Restart();
             }
             if (j == 1 && k == 1 && i == 1)
             {
-                o_win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winsx++;
-                x.Text = "X= " + winsx;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    o_win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winsx++;
+                    x.Text = "X= " + winsx;
+                    Restart();
+                }
             }
             if (j == -1 && k == -1 && i == -1)
             {
-                _win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winso++;
-                o.Text = "O= " + winso;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    _win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winso++;
+                    o.Text = "O= " + winso;
+                    Restart();
+                }
             }
             if (d == 1 && g == 1 && j == 1)
             {
-                o_win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winsx++;
-                x.Text = "X= " + winsx;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    o_win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winsx++;
+                    x.Text = "X= " + winsx;
+                    Restart();
+                }
             }
             if (d == -1 && g == -1 && j == -1)
             {
-                _win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winso++;
-                o.Text = "O= " + winso;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    _win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winso++;
+                    o.Text = "O= " + winso;
+                    Restart();
+                }
             }
         }
 
@@ -544,71 +763,106 @@ namespace Tic_Tac_Toe
             b.Visibility = Visibility.Hidden;
             if (a % 2 != 0)
             {
+
                 o_9.Visibility = Visibility.Hidden;
                 k++;
             }
             else
             {
+
                 _9.Visibility = Visibility.Hidden;
                 k--;
             }
             if (c != 0 && d != 0 && l != 0 && f != 0 && g != 0 && h != 0 && i != 0 && j != 0 && k != 0)
             {
+
                 draw.Visibility = Visibility.Visible;
                 Restart();
             }
             if (j == 1 && k == 1 && i == 1)
             {
-                o_win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winsx++;
-                x.Text = "X= " + winsx;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    o_win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winsx++;
+                    x.Text = "X= " + winsx;
+                    Restart();
+                }
             }
             if (j == -1 && k == -1 && i == -1)
             {
-                _win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winso++;
-                o.Text = "O= " + winso;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    _win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winso++;
+                    o.Text = "O= " + winso;
+                    Restart();
+                }
             }
             if (l == 1 && h == 1 && k == 1)
             {
-                o_win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winsx++;
-                x.Text = "X= " + winsx;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    o_win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winsx++;
+                    x.Text = "X= " + winsx;
+                    Restart();
+                }
             }
             if (l == -1 && h == -1 && k == -1)
             {
-                _win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winso++;
-                o.Text = "O= " + winso;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    _win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winso++;
+                    o.Text = "O= " + winso;
+                    Restart();
+                }
             }
             if (c == 1 && g == 1 && k == 1)
             {
-                o_win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winsx++;
-                x.Text = "X= " + winsx;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    o_win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winsx++;
+                    x.Text = "X= " + winsx;
+                    Restart();
+                }
             }
             if (c == -1 && g == -1 && k == -1)
             {
-                _win.Visibility = Visibility.Visible;
-                draw.Visibility = Visibility.Hidden;
-                winso++;
-                o.Text = "O= " + winso;
-                Restart();
+                if (wincheck == 0)
+                {
+
+                    wincheck += 1;
+                    _win.Visibility = Visibility.Visible;
+                    draw.Visibility = Visibility.Hidden;
+                    winso++;
+                    o.Text = "O= " + winso;
+                    Restart();
+                }
             }
         }
+
         private async void Restart()
         {
             await Task.Delay(1000);
+
             draw.Visibility = Visibility.Hidden;
             _win.Visibility = Visibility.Hidden;
             o_win.Visibility = Visibility.Hidden;
@@ -651,10 +905,11 @@ namespace Tic_Tac_Toe
             b7.Visibility = Visibility.Visible;
             b8.Visibility = Visibility.Visible;
             b9.Visibility = Visibility.Visible;
+            wincheck = 0;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
-        {
+        {  
             draw.Visibility = Visibility.Hidden;
             _win.Visibility = Visibility.Hidden;
             o_win.Visibility = Visibility.Hidden;
@@ -702,28 +957,44 @@ namespace Tic_Tac_Toe
             winso = 0;
             x.Text = "X= " + winsx;
             o.Text = "O= " + winso;
+            wincheck = 0;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            draw.Visibility = Visibility.Visible;
-            Restart();
+            if (wincheck == 0)
+            {
+
+                wincheck += 1;
+                draw.Visibility = Visibility.Visible;
+                Restart();
+            }
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            _win.Visibility = Visibility.Visible;
-            winso++;
-            o.Text = "O= " + winso;
-            Restart();
+            if (wincheck == 0)
+            {
+
+                wincheck += 1;
+                _win.Visibility = Visibility.Visible;
+                winso++;
+                o.Text = "O= " + winso;
+                Restart();
+            }
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            o_win.Visibility = Visibility.Visible;
-            winsx++;
-            x.Text = "X= " + winsx;
-            Restart();
+            if (wincheck == 0)
+            {
+
+                wincheck += 1;
+                o_win.Visibility = Visibility.Visible;
+                winsx++;
+                x.Text = "X= " + winsx;
+                Restart();
+            }
         }
     }
 }
